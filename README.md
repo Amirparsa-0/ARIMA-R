@@ -1,14 +1,26 @@
 # ARIMA-R
 .
+.
 ├── README.md
 ├── .gitignore
 ├── LICENSE
+├── data
+│   ├── raw               # Placeholder and raw xts RDS from 01_fetch_data.R
+│   │   └── .gitkeep
+│   └── processed         # Log-return RDS from 02_compute_returns.R
+│       └── .gitkeep
 ├── scripts               # R scripts for each step of the workflow
 │   ├── 01_fetch_data.R
 │   ├── 02_compute_returns.R
 │   ├── 03_stationarity_checks.R
 │   ├── 04_fit_arima.R
 │   └── 05_backtest_accuracy.R
+└── output
+    ├── plots             # PNG/PDF charts: ACF, PACF, forecasts, diagnostics
+    │   └── .gitkeep
+    └── models            # Serialized model objects (.rds)
+        └── .gitkeep
+
 
 
 ## Features
